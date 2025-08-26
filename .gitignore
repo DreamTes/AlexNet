@@ -1,0 +1,44 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project artifacts
+data/
+checkpoints/*
+results/*
+outputs/
+logs/
+
+# 允许的例外（根据需要增删）
+!checkpoints/best_model.pth
+!results/*.png
+!results/README.md
+
+# Model files
+*.pth
+*.pt
+*.onnx
+
+# Keep selected checkpoints/results even if matched above (order matters: rules below override above)
+!checkpoints/**/*.pth
+!checkpoints/best_model.pth
+!results/**/*.png
+!results/**/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
