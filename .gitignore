@@ -42,3 +42,9 @@ results/**
 
 # Jupyter
 .ipynb_checkpoints/
+
+# 本地文档和记录（不上传到远程）
+*问题解决记录.md
+*解决记录.md
+学习笔记.md
+TODO.md
