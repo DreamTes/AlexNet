@@ -17,28 +17,17 @@ env/
 .DS_Store
 Thumbs.db
 
-# Project artifacts
+# 项目产物（忽略以减少 push 体积）
 data/
-checkpoints/*
-results/*
+checkpoints/
+results/
 outputs/
 logs/
 
-# 允许的例外（根据需要增删）
-!checkpoints/best_model.pth
-!results/*.png
-!results/README.md
-
-# Model files
+# 模型/导出文件
 *.pth
 *.pt
 *.onnx
-
-# Keep selected checkpoints/results even if matched above (order matters: rules below override above)
-!checkpoints/**/*.pth
-!checkpoints/best_model.pth
-!results/**/*.png
-!results/**/*.csv
 
 # Jupyter
 .ipynb_checkpoints/
